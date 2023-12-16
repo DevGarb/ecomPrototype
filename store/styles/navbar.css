@@ -1,0 +1,105 @@
+.green-bar {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-primary-600);
+  color: white;
+  padding: var(--spacing-tiny);
+
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 12px;
+}
+  
+.navbar {
+  gap: var(--spacing-normal);
+  display: flex;
+  padding: var(--spacing-normal);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo-title {
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo-title p {
+  font-family: 'League_Spartan';
+  font-style: normal;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 3.2px;
+  color: var(--neutral-gray-404040);
+}
+
+.logo-subtitle {
+  color: var(--neutral-gray-404040);
+  font-family: 'League_Spartan';
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  gap: var(--spacing-normal);
+}
+
+.navbar-links a {
+  color: var(--neutral-gray-404040, #404040);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: var(--spacing-small);
+}
+
+.navbar-icons-desktop, .navbar-icons-default {
+  display: flex;
+  gap: var(--spacing-small);
+}
+
+.navbar-icons-mobile {
+  display: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .green-bar {
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .logo-title p {
+      font-size: 24px;
+  }
+
+  .logo-subtitle {
+    font-size: 7.5px;
+  }
+
+  .navbar-icons-desktop {
+    display: none;
+  }
+
+  .navbar-links {
+      display: none;
+  }
+
+  .navbar-icons-mobile {
+      display: flex;
+      gap: var(--spacing-small);
+  }
+}
